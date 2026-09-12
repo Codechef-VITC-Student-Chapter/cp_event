@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node api.js && next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts",
     "setup": "tsx scripts/setupDatabase.ts",
@@ -14,9 +14,9 @@
     "initialize-tournament": "tsx scripts/initialize-tournament.ts",
     "view-bracket": "tsx scripts/view-bracket.ts",
     "view-top-teams": "tsx scripts/view-top-teams.ts",
-    "start-round": "tsx scripts/start-round.ts",
+    "start-round": "node api.js && tsx scripts/start-round.ts",
     "advance-round": "tsx scripts/advance-round.ts",
-    "start-round1": "tsx scripts/start-round1.ts",
+    "start-round1": "node api.js && tsx scripts/start-round1.ts",
     "extend-round1": "tsx scripts/extend-round1.ts",
     "stop-round1": "tsx scripts/stop-round1.ts",
     "status-round1": "tsx scripts/status-round1.ts"
